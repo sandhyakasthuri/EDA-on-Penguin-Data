@@ -5,7 +5,7 @@ Data Overview:
 
 The dataset contains information about penguins, including their species, island habitat, physical measurements, and sex.
 There are a total of 344 entries with 7 columns: 'species', 'island', 'culmen_length_mm', 'culmen_depth_mm', 'flipper_length_mm', 'body_mass_g', and 'sex'.
-The 'sex' column has missing values, which were removed during data cleaning. 
+The 'sex' column has missing values removed during data cleaning. 
 
 Data Cleaning:
 
@@ -13,12 +13,12 @@ Missing values were handled by dropping rows with missing values in any column. 
 
 Species and Island: There are no missing values in the "Species" and "Island" columns, indicating that every entry in these columns has been properly recorded.
 
-Physical Measurements (Culmen Length, Culmen Depth, Flipper Length, Body Mass): Each of these columns has 2 missing values. This suggests that for 2 entries in the dataset, measurements for culmen length, culmen depth, flipper length, and body mass were not recorded.
+Physical Measurements (Culmen Length, Culmen Depth, Flipper Length, Body Mass): Each column has 2 missing values. This suggests that for 2 entries in the dataset, measurements for culmen length, culmen depth, flipper length, and body mass were not recorded.
 
 Sex: The "Sex" column has 10 missing values, indicating that the gender information is missing for 10 entries in the dataset.
 
 There are different ways to handle the missing values.
-Imputation: Filling missing values with mean, median, or mode values of the respective column.
+Imputation: Filling missing values with the respective column's mean, median, or mode values.
 Dropping: Removing rows or columns with missing values if they are not crucial for the analysis.
 Advanced Techniques: Utilizing predictive models to estimate missing values based on other available data.
 Impact on Analysis: It's essential to consider the impact of missing values on the analysis. Missing data may skew statistical analysis results or affect the performance of machine learning models if not handled properly. Therefore, careful consideration and appropriate handling of missing values are crucial to ensure the reliability and accuracy of the analysis results.
